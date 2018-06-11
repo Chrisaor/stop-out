@@ -5,4 +5,6 @@
 {% for school in schools %}
 <a href="{% url 'school-detail' school.id %}">{{ school }}</a>
 {% endfor %}
+
+<a href="{% url 'index' %}">처음으로 돌아가기</a>
 {% endblock %}

@@ -5,4 +5,6 @@
 {% for student in students %}
 <a href="{% url 'student-detail' student.id %}"><h4>{{ student.name }}</h4></a>
 {% endfor %}
+
+<a href="{% url 'index' %}">처음으로 돌아가기</a>
 {% endblock %}
