@@ -1,4 +1,9 @@
 {% extends 'education/base.html' %}
 {% block content %}
 <h2>Student Detail</h2>
+
+<h4>{{ student.name }}</h4>
+<p>학교 : <a href="{% url 'school-detail' student.school.id %}">{{ student.school }}</a></p>
+<p>생성일자 : {{ student.created_at }}</p>
+
 {% endblock %}

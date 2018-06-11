@@ -1,4 +1,8 @@
 {% extends 'education/base.html' %}
 {% block content %}
 <h2>Student List</h2>
+
+{% for student in students %}
+<a href="{% url 'student-detail' student.id %}"><h4>{{ student.name }}</h4></a>
+{% endfor %}
 {% endblock %}
